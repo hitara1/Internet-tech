@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generation</title>
+    <script src="app.js" defer></script>
+
+    <style>
+        body {
+            background-color:gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 250px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, button {
+            padding: 8px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">  
+        <form>
+            <label>Name</label>
+            <input type="text">
+
+            <label>Age</label>
+            <input id="age" type="number">
+
+            <label>Date of birth</label>
+            <input type="date">
+
+            <button type="button" onclick="showGeneration()">Submit</button>
+        </form>
+    </div>
+
+   
+</body>
+</html>
